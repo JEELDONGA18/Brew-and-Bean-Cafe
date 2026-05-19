@@ -1,0 +1,54 @@
+/* ===== NAVBAR ===== */
+.navbar {
+  padding: 16px 0; transition: var(--transition);
+  background: transparent; z-index: 1000;
+}
+.navbar.scrolled {
+  background: rgba(26,15,10,0.95); backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 10px 0; box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+.navbar-brand {
+  font-family: var(--font-heading); font-size: 1.6rem;
+  font-weight: 700; color: var(--cream) !important;
+  display: flex; align-items: center; gap: 10px;
+}
+.navbar-brand i { color: var(--accent); font-size: 1.4rem; }
+.navbar-brand span { color: var(--accent); }
+.navbar-nav .nav-link {
+  color: rgba(250,243,235,0.85) !important; font-weight: 500;
+  font-size: 0.9rem; padding: 8px 18px !important;
+  letter-spacing: 0.5px; position: relative; transition: var(--transition);
+}
+.navbar-nav .nav-link::after {
+  content: ''; position: absolute; bottom: 0; left: 18px;
+  width: 0; height: 2px; background: var(--accent);
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after { width: calc(100% - 36px); }
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active { color: var(--accent) !important; }
+.navbar-toggler {
+  border: 2px solid rgba(250,243,235,0.3);
+  padding: 6px 10px; border-radius: var(--radius-sm);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(250,243,235,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nav-cta {
+  background: var(--gradient-gold) !important;
+  color: var(--dark) !important; border-radius: 50px !important;
+  padding: 8px 24px !important; font-weight: 600 !important;
+  margin-left: 10px;
+}
+.nav-cta::after { display: none !important; }
+.nav-cta:hover { transform: scale(1.05); box-shadow: var(--shadow-glow); }
+.theme-toggle {
+  background: transparent; border: 2px solid rgba(250,243,235,0.3);
+  color: var(--cream); width: 40px; height: 40px;
+  border-radius: 50%; cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+  transition: var(--transition); margin-left: 10px; font-size: 1rem;
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }

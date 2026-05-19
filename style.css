@@ -1,0 +1,7 @@
+/* ===== MAIN STYLESHEET - Brew & Bean Café ===== */
+/* Imports all modular CSS files */
+@import url('css/base.css');
+@import url('css/navbar.css');
+@import url('css/sections-1.css');
+@import url('css/sections-2.css');
+@import url('css/sections-3.css');

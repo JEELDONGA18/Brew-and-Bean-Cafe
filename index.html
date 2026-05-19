@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Brew & Bean - Premium artisan cafÃ© serving freshly roasted coffee, desserts, and mocktails in a cozy atmosphere.">
+<meta name="keywords" content="cafÃ©, coffee shop, artisan coffee, latte, espresso, desserts, mocktails">
+<title>Brew & Bean â€” Premium Artisan CafÃ©</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader">
+<div class="preloader-inner">
+<div class="coffee-cup-loader"></div>
+<p class="preloader-text">Brewing your experience...</p>
+</div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+<div class="container">
+<a class="navbar-brand" href="#hero"><i class="fas fa-mug-hot"></i> Brew &amp; <span>Bean</span></a>
+<div class="d-flex align-items-center gap-2 d-lg-none">
+<button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+</div>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link nav-cta" href="#order">Order Now</a></li>
+</ul>
+<button class="theme-toggle d-none d-lg-flex" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section" id="hero">
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
+<i class="fas fa-mug-hot hero-float"></i>
+<i class="fas fa-coffee hero-float"></i>
+<i class="fas fa-seedling hero-float"></i>
+<div class="container hero-content">
+<div class="row align-items-center">
+<div class="col-lg-7">
+<p class="hero-subtitle">â˜• Welcome to Brew &amp; Bean</p>
+<h1 class="hero-title">Where Every Cup Tells a <span>Story</span></h1>
+<p class="hero-desc">Experience handcrafted coffee made from the finest beans, served in a cozy atmosphere designed for creators, dreamers, and coffee lovers.</p>
+<div class="hero-btns">
+<a href="#menu" class="btn-primary-custom"><i class="fas fa-book-open me-2"></i>View Menu</a>
+<a href="#order" class="btn-outline-custom" style="color:var(--cream);border-color:var(--cream);"><i class="fas fa-shopping-bag me-2"></i>Order Now</a>
+</div>
+<div class="hero-stats">
+<div class="hero-stat"><h3>5K+</h3><p>Happy Customers</p></div>
+<div class="hero-stat"><h3>50+</h3><p>Coffee Varieties</p></div>
+<div class="hero-stat"><h3>8+</h3><p>Years Serving</p></div>
+</div>
+</div>
+<div class="col-lg-5 d-none d-lg-block hero-image-col">
+<div class="hero-image-wrapper">
+<div class="steam-effect"><span class="steam-line"></span><span class="steam-line"></span><span class="steam-line"></span></div>
+<img src="images/latte-art.png" alt="Premium Latte Art">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+<section class="about-section section-padding" id="about">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 reveal-left">
+<div class="about-image-wrapper">
+<img src="images/cafe-interior.png" alt="Brew and Bean CafÃ© Interior">
+<div class="about-badge"><h4>Est. 2016</h4><p>PREMIUM CAFÃ‰</p></div>
+</div>
+</div>
+<div class="col-lg-6 reveal-right">
+<div class="about-content">
+<p class="subtitle" style="color:var(--secondary);font-size:0.9rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;">OUR STORY</p>
+<h2>Crafted with Passion, Served with Love</h2>
+<p>Born from a love for exceptional coffee, Brew &amp; Bean has been your neighborhood cafÃ© since 2016. We source the finest beans from around the world and roast them to perfection right here.</p>
+<p>Our space is designed for everyone â€” students cramming for exams, freelancers chasing deadlines, friends catching up, or anyone who simply appreciates a great cup of coffee.</p>
+<div class="about-features">
+<div class="about-feature"><i class="fas fa-check"></i><span>Single Origin Beans</span></div>
+<div class="about-feature"><i class="fas fa-check"></i><span>In-House Roasting</span></div>
+<div class="about-feature"><i class="fas fa-check"></i><span>Vegan Options</span></div>
+<div class="about-feature"><i class="fas fa-check"></i><span>Eco-Friendly</span></div>
+</div>
+<a href="#menu" class="btn-primary-custom mt-4"><i class="fas fa-arrow-right me-2"></i>Explore Menu</a>
+</div>
+</div>
+</div>
+<div class="row counter-row g-4 mt-4">
+<div class="col-6 col-md-3 reveal"><div class="counter-card"><i class="fas fa-smile-beam"></i><h3><span class="counter-value" data-target="5000" data-suffix="+">0</span></h3><p>Happy Customers</p></div></div>
+<div class="col-6 col-md-3 reveal"><div class="counter-card"><i class="fas fa-mug-hot"></i><h3><span class="counter-value" data-target="50" data-suffix="+">0</span></h3><p>Coffee Types</p></div></div>
+<div class="col-6 col-md-3 reveal"><div class="counter-card"><i class="fas fa-award"></i><h3><span class="counter-value" data-target="8" data-suffix="+">0</span></h3><p>Years Experience</p></div></div>
+<div class="col-6 col-md-3 reveal"><div class="counter-card"><i class="fas fa-star"></i><h3><span class="counter-value" data-target="4" data-suffix=".9">0</span></h3><p>Google Rating</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-section section-padding" id="why">
+<div class="container">
+<div class="section-title reveal"><p class="subtitle">WHY BREW &amp; BEAN</p><h2>What Makes Us Special</h2><div class="title-line"></div><p>More than just coffee â€” we're a lifestyle destination.</p></div>
+<div class="row g-4">
+<div class="col-md-6 col-lg-4 reveal"><div class="why-card"><div class="icon-wrap"><i class="fas fa-seedling"></i></div><h5>Fresh Coffee Beans</h5><p>Ethically sourced, single-origin beans roasted in small batches for maximum freshness and flavor.</p></div></div>
+<div class="col-md-6 col-lg-4 reveal"><div class="why-card"><div class="icon-wrap"><i class="fas fa-wifi"></i></div><h5>Free High-Speed WiFi</h5><p>Stay connected with our blazing-fast WiFi. Perfect for remote work, study sessions, or casual browsing.</p></div></div>
+<div class="col-md-6 col-lg-4 reveal"><div class="why-card"><div class="icon-wrap"><i class="fas fa-leaf"></i></div><h5>Peaceful Environment</h5><p>Ambient music, warm lighting, and comfortable seating create the perfect escape from the hustle.</p></div></div>
+<div class="col-md-6 col-lg-4 reveal"><div class="why-card"><div class="icon-wrap"><i class="fas fa-bolt"></i></div><h5>Fast Service</h5><p>Your time matters. We ensure your order is prepared and served within minutes, every time.</p></div></div>
+<div class="col-md-6 col-lg-4 reveal"><div class="why-card"><div class="icon-wrap"><i class="fas fa-camera"></i></div><h5>Instagram Worthy</h5><p>Every corner is designed for that perfect shot. Our aesthetic interiors are social media gold.</p></div></div>
+<div class="col-md-6 col-lg-4 reveal"><div class="why-card"><div class="icon-wrap"><i class="fas fa-graduation-cap"></i></div><h5>Student Friendly</h5><p>Special student discounts, power outlets everywhere, and a quiet zone for focused study.</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- Menu Section -->
+<section class="menu-section section-padding" id="menu">
+<div class="container">
+<div class="section-title reveal"><p class="subtitle">OUR MENU</p><h2>Crafted to Perfection</h2><div class="title-line"></div><p>From bold espressos to refreshing mocktails â€” there's something for every palate.</p></div>
+<div class="menu-filters reveal">
+<button class="menu-filter-btn active" data-filter="all">All</button>
+<button class="menu-filter-btn" data-filter="hot">Hot Coffee</button>
+<button class="menu-filter-btn" data-filter="cold">Cold Coffee</button>
+<button class="menu-filter-btn" data-filter="dessert">Desserts</button>
+<button class="menu-filter-btn" data-filter="snack">Snacks</button>
+<button class="menu-filter-btn" data-filter="mocktail">Mocktails</button>
+</div>
+<div class="row g-4">
+<div class="col-sm-6 col-lg-4 menu-card-wrapper" data-category="hot"><div class="menu-card"><div class="menu-card-img"><img src="images/espresso.png" alt="Classic Espresso"><span class="menu-card-badge">Bestseller</span></div><div class="menu-card-body"><h5>Classic Espresso</h5><p>Rich, bold, and full-bodied shot of pure coffee perfection.</p><div class="menu-card-footer"><span class="menu-price">â‚¹149</span><button class="add-to-cart-btn" aria-label="Add to cart"><i class="fas fa-plus"></i></button></div></div></div></div>
+<div class="col-sm-6 col-lg-4 menu-card-wrapper" data-category="hot"><div class="menu-card"><div class="menu-card-img"><img src="images/latte-art.png" alt="Caramel Latte"><span class="menu-card-badge">Popular</span></div><div class="menu-card-body"><h5>Caramel Latte</h5><p>Smooth espresso with steamed milk and sweet caramel drizzle.</p><div class="menu-card-footer"><span class="menu-price">â‚¹199</span><button class="add-to-cart-btn" aria-label="Add to cart"><i class="fas fa-plus"></i></button></div></div></div></div>
+<div class="col-sm-6 col-lg-4 menu-card-wrapper" data-category="hot"><div class="menu-card"><div class="menu-card-img"><img src="images/espresso.png" alt="Cappuccino"><span class="menu-card-badge">Classic</span></div><div class="menu-card-body"><h5>Cappuccino</h5><p>Perfect balance of espresso, steamed milk, and velvety foam.</p><div class="menu-card-footer"><span class="menu-price">â‚¹179</span><button class="add-to-cart-btn" aria-label="Add to cart"><i class="fas fa-plus"></i></button></div></div></div></div>
+<div class="col-sm-6 col-lg-4 menu-card-wrapper" data-category="cold"><div class="menu-card"><div class="menu-card-img"><img src="images/iced-coffee.png" alt="Iced Mocha"></div><div class="menu-card-body"><h5>Iced Mocha</h5><p>Chilled espresso blended with chocolate, milk, and ice.</p><div class="menu-card-footer"><span class="menu-price">â‚¹229</span><button class="add-to-cart-btn" aria-label="Add to cart"><i class="fas fa-plus"></i></button></div></div></div></div>
+<div class="col-sm-6 col-lg-4 menu-card-wrapper" data-category="cold"><div class="menu-card"><div class="menu-card-img"><img src="images/iced-coffee.png" alt="Cold Brew"><span class="menu-card-badge">Trending</span></div><div class="menu-card-body"><h5>Cold Brew</h5><p>Slow-steeped for 18 hours for a smooth, less acidic flavor.</p><div class="menu-card-footer"><span class="menu-price">â‚¹249</span><button class="add-to-cart-btn" aria-label="Add to cart"><i class="fas fa-plus"></i></button></div></div></div></div>
+<div class="col-sm-6 col-lg-4 menu-card-wrapper" data-category="dessert"><div class="menu-card"><div class="menu-card-img"><img src="images/dessert.png" alt="Chocolate Lava Cake"></div><div class="menu-card-body"><h5>Chocolate Lava Cake</h5><p>Warm, gooey chocolate center with a rich cocoa shell.</p><div class="menu-card-footer"><span class="menu-price">â‚¹299</span><button class="add-to-cart-btn" aria-label="Add to cart"><i class="fas fa-plus"></i></button></div></div></div></div>
+<div class="col-sm-6 col-lg-4 menu-card-wrapper" data-category="snack"><div class="menu-card"><div class="menu-card-img"><img src="images/snacks.png" alt="Club Sandwich"></div><div class="menu-card-body"><h5>Grilled Club Sandwich</h5><p>Loaded triple-decker with chicken, veggies, and cheese.</p><div class="menu-card-footer"><span class="menu-price">â‚¹259</span><button class="add-to-cart-btn" aria-label="Add to cart"><i class="fas fa-plus"></i></button></div></div></div></div>
+<div class="col-sm-6 col-lg-4 menu-card-wrapper" data-category="snack"><div class="menu-card"><div class="menu-card-img"><img src="images/snacks.png" alt="Garlic Bread"><span class="menu-card-badge">Chef's Pick</span></div><div class="menu-card-body"><h5>Cheesy Garlic Bread</h5><p>Crispy garlic-buttered bread topped with melted mozzarella.</p><div class="menu-card-footer"><span class="menu-price">â‚¹179</span><button class="add-to-cart-btn" aria-label="Add to cart"><i class="fas fa-plus"></i></button></div></div></div></div>
+<div class="col-sm-6 col-lg-4 menu-card-wrapper" data-category="mocktail"><div class="menu-card"><div class="menu-card-img"><img src="images/mocktail.png" alt="Berry Bliss Mocktail"><span class="menu-card-badge">New</span></div><div class="menu-card-body"><h5>Berry Bliss Mocktail</h5><p>Refreshing mix of mixed berries, lime, and sparkling soda.</p><div class="menu-card-footer"><span class="menu-price">â‚¹199</span><button class="add-to-cart-btn" aria-label="Add to cart"><i class="fas fa-plus"></i></button></div></div></div></div>
+</div>
+</div>
+</section>
+
+<!-- Order Section -->
+<section class="order-section section-padding" id="order">
+<div class="container">
+<div class="section-title reveal"><p class="subtitle" style="color:var(--accent);">ORDER ONLINE</p><h2 style="color:var(--cream);">Your Cart</h2><div class="title-line"></div><p style="color:rgba(250,243,235,0.7);">Add items from the menu and order via WhatsApp!</p></div>
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="order-glass reveal">
+<div id="orderList"></div>
+<div class="order-total"><h4>Total <span id="orderCount" style="font-size:0.8rem;opacity:0.6;">(0 items)</span></h4><span class="total-amount" id="orderTotal">â‚¹0</span></div>
+<div class="order-actions">
+<button class="whatsapp-btn" id="whatsappOrder"><i class="fab fa-whatsapp"></i> Order via WhatsApp</button>
+<button class="btn-primary-custom" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})"><i class="fas fa-plus me-2"></i>Add More</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- QR Menu Section -->
+<section class="qr-section section-padding" id="qrmenu">
+<div class="container">
+<div class="section-title reveal"><p class="subtitle">SCAN &amp; ORDER</p><h2>Digital Menu</h2><div class="title-line"></div></div>
+<div class="reveal">
+<div class="qr-card">
+<div class="qr-placeholder"><i class="fas fa-qrcode"></i></div>
+<h4>Scan to View Full Menu</h4>
+<p>Point your phone camera at this QR code to browse our complete menu, place orders, and pay â€” all from your table.</p>
+<a href="#menu" class="btn-primary-custom mt-3"><i class="fas fa-utensils me-2"></i>View Menu Online</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery-section section-padding" id="gallery">
+<div class="container">
+<div class="section-title reveal"><p class="subtitle">OUR GALLERY</p><h2>CafÃ© Vibes</h2><div class="title-line"></div><p>A peek into the Brew &amp; Bean experience.</p></div>
+<div class="gallery-grid reveal">
+<div class="gallery-item"><img src="images/cafe-interior.png" alt="CafÃ© Interior"><div class="gallery-overlay"><i class="fas fa-expand"></i><span>Our Space</span></div></div>
+<div class="gallery-item"><img src="images/latte-art.png" alt="Latte Art"><div class="gallery-overlay"><i class="fas fa-expand"></i><span>Latte Art</span></div></div>
+<div class="gallery-item"><img src="images/espresso.png" alt="Espresso"><div class="gallery-overlay"><i class="fas fa-expand"></i><span>Espresso</span></div></div>
+<div class="gallery-item"><img src="images/dessert.png" alt="Desserts"><div class="gallery-overlay"><i class="fas fa-expand"></i><span>Desserts</span></div></div>
+<div class="gallery-item"><img src="images/gallery-1.png" alt="CafÃ© Corner"><div class="gallery-overlay"><i class="fas fa-expand"></i><span>Cozy Corner</span></div></div>
+<div class="gallery-item"><img src="images/iced-coffee.png" alt="Cold Coffee"><div class="gallery-overlay"><i class="fas fa-expand"></i><span>Cold Brew</span></div></div>
+<div class="gallery-item"><img src="images/mocktail.png" alt="Mocktails"><div class="gallery-overlay"><i class="fas fa-expand"></i><span>Mocktails</span></div></div>
+</div>
+</div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox"><button class="lightbox-close" aria-label="Close">&times;</button><img id="lightboxImg" src="" alt="Gallery Preview"></div>
+
+<!-- Social / Instagram Section -->
+<section class="social-section section-padding" id="social">
+<div class="container">
+<div class="section-title reveal"><p class="subtitle" style="color:var(--accent);">FOLLOW US</p><h2 style="color:var(--cream);">@brewandbean</h2><div class="title-line"></div><p style="color:rgba(250,243,235,0.7);">Join our community of coffee lovers on Instagram.</p></div>
+<div class="insta-grid reveal">
+<div class="insta-item"><img src="images/latte-art.png" alt="Instagram Post"></div>
+<div class="insta-item"><img src="images/cafe-interior.png" alt="Instagram Post"></div>
+<div class="insta-item"><img src="images/dessert.png" alt="Instagram Post"></div>
+<div class="insta-item"><img src="images/iced-coffee.png" alt="Instagram Post"></div>
+</div>
+<div class="social-links reveal">
+<a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="#" class="social-link" aria-label="Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+</div>
+</div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section section-padding" id="location">
+<div class="container">
+<div class="section-title reveal"><p class="subtitle">FIND US</p><h2>Visit Our CafÃ©</h2><div class="title-line"></div></div>
+<div class="row g-4">
+<div class="col-lg-8 reveal-left">
+<div class="map-wrapper"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9!2d72.83!3d21.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEwJzEyLjAiTiA3MsKwNDknNDguMCJF!5e0!3m2!1sen!2sin!4v1" allowfullscreen loading="lazy" title="CafÃ© Location"></iframe></div>
+</div>
+<div class="col-lg-4 reveal-right">
+<div class="map-info-card">
+<div class="map-info-item"><i class="fas fa-map-marker-alt"></i><div><h6>Address</h6><p>123 Coffee Lane, Downtown, Surat, Gujarat 395007</p></div></div>
+<div class="map-info-item"><i class="fas fa-clock"></i><div><h6>Opening Hours</h6><p>Mon-Fri: 8AM - 11PM<br>Sat-Sun: 9AM - 12AM</p></div></div>
+<div class="map-info-item"><i class="fas fa-phone"></i><div><h6>Phone</h6><p>+91 99999 99999</p></div></div>
+<div class="map-info-item"><i class="fas fa-envelope"></i><div><h6>Email</h6><p>hello@brewandbean.in</p></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section section-padding" id="testimonials">
+<div class="container">
+<div class="section-title reveal"><p class="subtitle">TESTIMONIALS</p><h2>What Our Customers Say</h2><div class="title-line"></div></div>
+<div class="reveal" style="overflow:hidden;">
+<div class="testimonial-track d-flex" style="transition:transform 0.5s ease;">
+<div class="testimonial-slide" style="min-width:100%;padding:0 15px;">
+<div class="row g-4">
+<div class="col-md-4"><div class="testimonial-card"><div class="testimonial-avatar"><i class="fas fa-user"></i></div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><blockquote>"Best cafÃ© in the city! The ambiance is incredible and their cold brew is absolutely addictive."</blockquote><h6>Priya Sharma</h6><span class="role">Regular Customer</span></div></div>
+<div class="col-md-4"><div class="testimonial-card"><div class="testimonial-avatar"><i class="fas fa-user"></i></div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><blockquote>"Perfect study spot! Free WiFi, amazing coffee, and the most peaceful environment."</blockquote><h6>Rahul Patel</h6><span class="role">Student</span></div></div>
+<div class="col-md-4"><div class="testimonial-card"><div class="testimonial-avatar"><i class="fas fa-user"></i></div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><blockquote>"The lava cake is to die for! Every visit feels like a premium experience."</blockquote><h6>Ananya Desai</h6><span class="role">Food Blogger</span></div></div>
+</div>
+</div>
+<div class="testimonial-slide" style="min-width:100%;padding:0 15px;">
+<div class="row g-4">
+<div class="col-md-4"><div class="testimonial-card"><div class="testimonial-avatar"><i class="fas fa-user"></i></div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><blockquote>"My go-to workspace! Amazing vibes, great coffee, and the staff is super friendly."</blockquote><h6>Vikram Singh</h6><span class="role">Freelancer</span></div></div>
+<div class="col-md-4"><div class="testimonial-card"><div class="testimonial-avatar"><i class="fas fa-user"></i></div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><blockquote>"Instagram-worthy cafÃ©! Every corner is aesthetic. Their mocktails are refreshing."</blockquote><h6>Neha Joshi</h6><span class="role">Content Creator</span></div></div>
+<div class="col-md-4"><div class="testimonial-card"><div class="testimonial-avatar"><i class="fas fa-user"></i></div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><blockquote>"The caramel latte here is hands down the best I've ever had. A must-visit!"</blockquote><h6>Arjun Mehta</h6><span class="role">Coffee Enthusiast</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="testimonial-nav reveal">
+<button id="testimonialPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+<button id="testimonialNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+</div>
+</div>
+</section>
+
+<!-- Engagement Section -->
+<section class="engagement-section section-padding" id="offers">
+<div class="container">
+<div class="newsletter-card reveal">
+<h3>â˜• Get Exclusive Offers</h3>
+<p>Subscribe to our newsletter and never miss a deal, new menu item, or event.</p>
+<form class="newsletter-form" id="newsletterForm">
+<input type="email" placeholder="Enter your email address" required>
+<button type="submit" class="btn-primary-custom">Subscribe <i class="fas fa-paper-plane ms-2"></i></button>
+</form>
+</div>
+<div class="loyalty-card reveal">
+<div class="loyalty-icon"><i class="fas fa-crown"></i></div>
+<div>
+<h5>Brew & Bean Rewards Club</h5>
+<p>Join our loyalty program â€” earn points on every order and unlock free drinks, discounts, and exclusive member perks! Your 5th coffee is always on us.</p>
+<a href="#" class="btn-outline-custom mt-2" style="display:inline-block;">Join Now <i class="fas fa-arrow-right ms-1"></i></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section section-padding" id="contact">
+<div class="container">
+<div class="section-title reveal"><p class="subtitle">GET IN TOUCH</p><h2>Contact Us</h2><div class="title-line"></div><p>We'd love to hear from you! Drop us a message or visit us.</p></div>
+<div class="row g-4">
+<div class="col-lg-7 reveal-left">
+<div class="contact-form-wrapper">
+<form class="contact-form" id="contactForm">
+<div class="row g-3">
+<div class="col-md-6"><input type="text" class="form-control" id="contactName" placeholder="Your Name" required></div>
+<div class="col-md-6"><input type="email" class="form-control" id="contactEmail" placeholder="Your Email" required></div>
+<div class="col-12"><textarea class="form-control" id="contactMessage" placeholder="Your Message" required></textarea></div>
+<div class="col-12"><button type="submit" class="btn-primary-custom w-100"><i class="fas fa-paper-plane me-2"></i>Send Message</button></div>
+</div>
+</form>
+</div>
+</div>
+<div class="col-lg-5 reveal-right">
+<div class="contact-quick-links">
+<a href="https://wa.me/919999999999" target="_blank" class="contact-quick-link whatsapp"><i class="fab fa-whatsapp"></i><div><h6>WhatsApp Us</h6><p>Quick response guaranteed</p></div></a>
+<a href="tel:+919999999999" class="contact-quick-link call"><i class="fas fa-phone"></i><div><h6>Call Us</h6><p>+91 99999 99999</p></div></a>
+<a href="mailto:hello@brewandbean.in" class="contact-quick-link email"><i class="fas fa-envelope"></i><div><h6>Email Us</h6><p>hello@brewandbean.in</p></div></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-4">
+<h3 class="footer-brand"><i class="fas fa-mug-hot" style="color:var(--accent);"></i> Brew &amp; <span>Bean</span></h3>
+<p>Where every cup tells a story. Premium artisan coffee served with love since 2016.</p>
+<div class="footer-social">
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+<div class="col-lg-2 col-md-4">
+<h5>Quick Links</h5>
+<ul class="footer-links">
+<li><a href="#hero"><i class="fas fa-chevron-right"></i> Home</a></li>
+<li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i> Menu</a></li>
+<li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+<li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-4">
+<h5>CafÃ© Timing</h5>
+<ul class="footer-links">
+<li><a href="javascript:void(0)"><i class="fas fa-clock"></i> Mon-Fri: 8AM-11PM</a></li>
+<li><a href="javascript:void(0)"><i class="fas fa-clock"></i> Saturday: 9AM-12AM</a></li>
+<li><a href="javascript:void(0)"><i class="fas fa-clock"></i> Sunday: 9AM-12AM</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-4">
+<h5>Contact Info</h5>
+<ul class="footer-links">
+<li><a href="tel:+919999999999"><i class="fas fa-phone"></i> +91 99999 99999</a></li>
+<li><a href="mailto:hello@brewandbean.in"><i class="fas fa-envelope"></i> hello@brewandbean.in</a></li>
+<li><a href="#location"><i class="fas fa-map-marker-alt"></i> 123 Coffee Lane, Surat</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom"><p>&copy; 2024 Brew &amp; Bean. All rights reserved. Crafted with â˜• &amp; â¤ï¸</p></div>
+</div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<!-- Sticky WhatsApp Order -->
+<a href="https://wa.me/919999999999" target="_blank" class="sticky-order-btn"><i class="fab fa-whatsapp"></i> Order Now</a>
+
+<!-- Offer Popup -->
+<div class="offer-popup" id="offerPopup">
+<div class="offer-popup-content">
+<button class="offer-popup-close" aria-label="Close">&times;</button>
+<div class="offer-icon">ðŸŽ‰</div>
+<h3>Special Offer!</h3>
+<p>Get <strong>20% OFF</strong> on your first online order. Use code:</p>
+<div class="offer-code">BREW20</div>
+<a href="#order" class="btn-primary-custom" onclick="document.getElementById('offerPopup').classList.remove('active');sessionStorage.setItem('offer-dismissed','true');">Order Now</a>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

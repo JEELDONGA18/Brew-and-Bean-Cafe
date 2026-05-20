@@ -22,7 +22,7 @@
   animation: fadeInUp 0.8s ease 0.3s both;
 }
 .hero-title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem); color: var(--cream);
+  font-size: clamp(2.5rem, 6vw, 4.5rem); color: #faf3eb;
   margin-bottom: 24px; line-height: 1.1;
   animation: fadeInUp 0.8s ease 0.5s both;
 }
@@ -83,9 +83,23 @@
 .steam-line:nth-child(2) { animation-delay: 0.4s; height: 24px; }
 .steam-line:nth-child(3) { animation-delay: 0.8s; height: 34px; }
 
+/* Hero outline button - always light regardless of theme */
+.btn-hero-outline {
+  background: transparent; color: #faf3eb;
+  border: 2px solid #faf3eb; padding: 12px 34px;
+  border-radius: 50px; font-family: var(--font-body);
+  font-weight: 600; font-size: 0.95rem; cursor: pointer;
+  transition: var(--transition); display: inline-flex;
+  align-items: center; justify-content: center;
+}
+.btn-hero-outline:hover {
+  background: rgba(250,243,235,0.15); color: #faf3eb;
+  transform: translateY(-3px); box-shadow: 0 4px 20px rgba(250,243,235,0.2);
+}
+
 /* ===== ABOUT SECTION ===== */
 .about-section { background: var(--cream); position: relative; overflow: hidden; }
-[data-theme="dark"] .about-section { background: var(--dark); }
+[data-theme="dark"] .about-section { background: #111111; }
 .about-image-wrapper {
   position: relative; border-radius: var(--radius-lg);
   overflow: hidden; box-shadow: var(--shadow-lg);
@@ -93,7 +107,7 @@
 .about-image-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .about-badge {
   position: absolute; bottom: 24px; right: 24px;
-  background: var(--gradient-warm); color: var(--cream);
+  background: var(--gradient-warm); color: #faf3eb;
   padding: 16px 24px; border-radius: var(--radius);
   text-align: center;
 }
@@ -136,7 +150,7 @@
 .why-section {
   background: var(--beige); position: relative;
 }
-[data-theme="dark"] .why-section { background: #0d0705; }
+[data-theme="dark"] .why-section { background: #151515; }
 .why-card {
   background: var(--white); border-radius: var(--radius);
   padding: 40px 28px; text-align: center;
@@ -160,9 +174,36 @@
   transition: var(--transition);
 }
 .why-card:hover .icon-wrap {
-  background: var(--gradient-gold); color: var(--white);
+  background: var(--gradient-gold); color: #1a0f0a;
   transform: scale(1.1);
 }
 .why-card h5 { font-size: 1.15rem; margin-bottom: 12px; color: var(--primary); }
-[data-theme="dark"] .why-card h5 { color: var(--cream); }
+[data-theme="dark"] .why-card h5 { color: #e8ddd0; }
 .why-card p { color: var(--text-light); font-size: 0.9rem; line-height: 1.7; }
+
+@media (max-width: 767px) {
+  .hero-btns .btn-primary-custom,
+  .hero-btns .btn-outline-custom,
+  .hero-btns .btn-hero-outline {
+    padding: 12px 24px;
+    font-size: 0.88rem;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 575px) {
+  .hero-btns .btn-primary-custom,
+  .hero-btns .btn-outline-custom,
+  .hero-btns .btn-hero-outline {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .hero-btns {
+    align-items: center;
+  }
+}

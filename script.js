@@ -1,5 +1,5 @@
 /**
- * ===== Brew & Bean Café - Main JavaScript =====
+ * ===== T Café - Main JavaScript =====
  * Premium café website interactions and animations
  */
 

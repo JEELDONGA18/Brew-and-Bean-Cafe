@@ -1,6 +1,6 @@
 /* ===== MENU SECTION ===== */
 .menu-section { background: var(--cream); position: relative; }
-[data-theme="dark"] .menu-section { background: var(--dark); }
+[data-theme="dark"] .menu-section { background: #111111; }
 .menu-filters {
   display: flex; justify-content: center; gap: 12px;
   flex-wrap: wrap; margin-bottom: 40px;
@@ -12,10 +12,10 @@
   font-family: var(--font-body);
 }
 .menu-filter-btn.active, .menu-filter-btn:hover {
-  background: var(--gradient-warm); color: var(--cream); border-color: transparent;
+  background: var(--gradient-warm); color: #faf3eb; border-color: transparent;
 }
 [data-theme="dark"] .menu-filter-btn { border-color: var(--accent); color: var(--accent); }
-[data-theme="dark"] .menu-filter-btn.active { color: var(--dark); }
+[data-theme="dark"] .menu-filter-btn.active { color: #1a0f0a; }
 .menu-card {
   background: var(--white); border-radius: var(--radius);
   overflow: hidden; box-shadow: var(--shadow-sm);
@@ -34,7 +34,7 @@
 .menu-card:hover .menu-card-img img { transform: scale(1.1); }
 .menu-card-badge {
   position: absolute; top: 12px; left: 12px;
-  background: var(--gradient-gold); color: var(--dark);
+  background: var(--gradient-gold); color: #1a0f0a;
   padding: 4px 14px; border-radius: 50px; font-size: 0.75rem;
   font-weight: 600;
 }
@@ -43,7 +43,7 @@
   flex-direction: column;
 }
 .menu-card-body h5 { font-size: 1.1rem; margin-bottom: 8px; color: var(--primary); }
-[data-theme="dark"] .menu-card-body h5 { color: var(--cream); }
+[data-theme="dark"] .menu-card-body h5 { color: #e8ddd0; }
 .menu-card-body p { color: var(--text-light); font-size: 0.85rem; line-height: 1.6; flex: 1; }
 .menu-card-footer {
   display: flex; justify-content: space-between; align-items: center;
@@ -55,7 +55,7 @@
 }
 .add-to-cart-btn {
   width: 42px; height: 42px; border-radius: 50%;
-  background: var(--gradient-warm); color: var(--cream);
+  background: var(--gradient-warm); color: #faf3eb;
   border: none; cursor: pointer; display: flex;
   align-items: center; justify-content: center;
   transition: var(--transition); font-size: 1rem;
@@ -86,7 +86,7 @@
 .order-item:hover { background: rgba(255,255,255,0.1); }
 .order-item img { width: 60px; height: 60px; border-radius: var(--radius-sm); object-fit: cover; }
 .order-item-info { flex: 1; }
-.order-item-info h6 { color: var(--cream); font-size: 1rem; margin-bottom: 2px; }
+.order-item-info h6 { color: #faf3eb; font-size: 1rem; margin-bottom: 2px; }
 .order-item-info span { color: var(--accent); font-weight: 600; }
 .order-qty {
   display: flex; align-items: center; gap: 12px;
@@ -94,18 +94,18 @@
 .order-qty button {
   width: 32px; height: 32px; border-radius: 50%;
   border: 1px solid rgba(255,255,255,0.2);
-  background: transparent; color: var(--cream);
+  background: transparent; color: #faf3eb;
   cursor: pointer; transition: var(--transition);
   display: flex; align-items: center; justify-content: center;
 }
-.order-qty button:hover { background: var(--accent); color: var(--dark); border-color: var(--accent); }
-.order-qty .qty-value { color: var(--cream); font-weight: 600; min-width: 24px; text-align: center; }
+.order-qty button:hover { background: var(--accent); color: #1a0f0a; border-color: var(--accent); }
+.order-qty .qty-value { color: #faf3eb; font-weight: 600; min-width: 24px; text-align: center; }
 .order-total {
   margin-top: 24px; padding-top: 24px;
   border-top: 1px solid rgba(255,255,255,0.1);
   display: flex; justify-content: space-between; align-items: center;
 }
-.order-total h4 { color: var(--cream); font-size: 1.3rem; }
+.order-total h4 { color: #faf3eb; font-size: 1.3rem; }
 .order-total .total-amount { color: var(--accent); font-size: 1.8rem; font-family: var(--font-heading); }
 .order-actions { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
 .whatsapp-btn {
@@ -118,7 +118,7 @@
 
 /* ===== QR MENU SECTION ===== */
 .qr-section { background: var(--beige); }
-[data-theme="dark"] .qr-section { background: #0d0705; }
+[data-theme="dark"] .qr-section { background: #151515; }
 .qr-card {
   background: var(--white); border-radius: var(--radius-lg);
   padding: 50px; text-align: center; box-shadow: var(--shadow-md);
@@ -139,5 +139,5 @@
 }
 [data-theme="dark"] .qr-placeholder { background: rgba(201,169,110,0.1); }
 .qr-card h4 { font-size: 1.4rem; margin-bottom: 8px; color: var(--primary); }
-[data-theme="dark"] .qr-card h4 { color: var(--cream); }
+[data-theme="dark"] .qr-card h4 { color: #e8ddd0; }
 .qr-card p { color: var(--text-light); font-size: 0.95rem; }

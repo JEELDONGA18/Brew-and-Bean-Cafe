@@ -417,3 +417,63 @@
   .offer-popup-content h3 { font-size: 1.4rem; }
   .offer-code { font-size: 1.1rem; letter-spacing: 2px; padding: 10px 18px; }
 }
+
+/* ===== MOBILE OVERFLOW PREVENTION ===== */
+/* Prevent any horizontal scroll on all devices */
+.container, .container-fluid {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row > * {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  /* Hide floating elements that can escape viewport */
+  .hero-float { display: none !important; }
+
+  /* Constrain all grids */
+  .gallery-grid,
+  .insta-grid {
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  /* Testimonial slider containment */
+  .testimonial-track {
+    max-width: 100%;
+  }
+  .testimonial-slide {
+    overflow: hidden;
+  }
+
+  /* Map containment */
+  .map-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .map-wrapper iframe {
+    max-width: 100%;
+  }
+
+  /* Images never exceed container */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Order section decorative circle */
+  .order-section::before {
+    display: none;
+  }
+
+  /* Ensure no padding causes overflow */
+  .section-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

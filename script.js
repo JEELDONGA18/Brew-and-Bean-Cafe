@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       msg += `\n💰 *Total: ₹${total}*\n\nPlease confirm my order! 🙏`;
       const encoded = encodeURIComponent(msg);
-      window.open(`https://wa.me/919999999999?text=${encoded}`, '_blank');
+      window.open(`https://wa.me/9313254782?text=${encoded}`, '_blank');
     });
   }
 
@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // WhatsApp integration
       const msg = `📧 *Contact from Brew & Bean Website*\n\n👤 Name: ${name}\n📧 Email: ${email}\n💬 Message: ${message}`;
-      window.open(`https://wa.me/919999999999?text=${encodeURIComponent(msg)}`, '_blank');
+      window.open(`https://wa.me/9313254782?text=${encodeURIComponent(msg)}`, '_blank');
       contactForm.reset();
       alert('Message sent via WhatsApp! We\'ll get back to you soon. ☕');
     });

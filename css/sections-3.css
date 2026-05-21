@@ -204,8 +204,17 @@
   color: var(--text);
 }
 [data-theme="dark"] .contact-form .form-control {
-  background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);
-  color: #e8ddd0;
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.15) !important;
+  color: #f0e6d6 !important;
+}
+[data-theme="dark"] .contact-form .form-control::placeholder {
+  color: rgba(240,230,214,0.45) !important;
+}
+[data-theme="dark"] .contact-form .form-control:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px rgba(201,169,110,0.25) !important;
+  color: #f0e6d6 !important;
 }
 .contact-form .form-control:focus {
   border-color: var(--accent); box-shadow: 0 0 0 3px rgba(201,169,110,0.15);

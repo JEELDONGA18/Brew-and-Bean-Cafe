@@ -43,7 +43,7 @@
   margin-left: 10px;
 }
 .nav-cta::after { display: none !important; }
-.nav-cta:hover { transform: scale(1.05); box-shadow: var(--shadow-glow); color: #1a0f0a !important; background: var(--gradient-gold) !important; }
+.nav-cta:hover { transform: scale(1.05); box-shadow: var(--shadow-glow); color: #ffffff !important; background: var(--gradient-warm) !important; }
 .theme-toggle {
   background: transparent; border: 2px solid rgba(250,243,235,0.3);
   color: #faf3eb; width: 40px; height: 40px;
